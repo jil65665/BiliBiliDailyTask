@@ -31,8 +31,8 @@ jobs:
       
     - name: Run
       env:
-        userId: ${{433527147}}
-        sessData: ${{0b154cdd%2C1738974364%2Ccee6f%2A81CjCGp6-9MTiK3HVc4efxhYFBxHCNtXqnxsitgUmvuYfBm4RCwXt-JK6BbyK1pk8R_igSVmUxd0FsN0dqSTk0TkZ5bnNLREM1UVIxYk84TjBLQVRaWWhWMlhmTDZCZ1NlM0JGMlhhUHZCZzNNUFc2YkM1YjdsdC1PY3RTVEg4MmtITjhOMERVaXlRIIEC}}
-        biliJct: ${{ff37c81619e60fca18a774d946897173}}
+        userId: ${433527147}
+        sessData: ${0b154cdd%2C1738974364%2Ccee6f%2A81CjCGp6-9MTiK3HVc4efxhYFBxHCNtXqnxsitgUmvuYfBm4RCwXt-JK6BbyK1pk8R_igSVmUxd0FsN0dqSTk0TkZ5bnNLREM1UVIxYk84TjBLQVRaWWhWMlhmTDZCZ1NlM0JGMlhhUHZCZzNNUFc2YkM1YjdsdC1PY3RTVEg4MmtITjhOMERVaXlRIIEC}
+        biliJct: ${ff37c81619e60fca18a774d946897173}
         otherConfigs: ${{secrets.OTHERCONFIGS}}
       run: dotnet run -p ./src/Ray.BiliBiliTool.Console -userId=${userId} -sessData=${sessData} -biliJct=${biliJct} -closeConsoleWhenEnd=1 ${otherConfigs}
